@@ -1,0 +1,70 @@
+[project]
+name = "lead-generator"
+version = "1.1.0"
+description = "Automated business lead generation and enrichment pipeline"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+    # Core
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "python-dotenv>=1.0.1",
+    # Database
+    "sqlalchemy>=2.0.30",
+    "aiosqlite>=0.20.0",
+    "pydantic>=2.7.1",
+    "pydantic-settings>=2.2.1",
+    # Scraping
+    "httpx[socks]>=0.27.0",
+    "beautifulsoup4>=4.12.3",
+    "playwright>=1.44.0",
+    "playwright-stealth>=1.0.6",
+    # Phone formatting / classification
+    "phonenumbers>=8.13.36",
+    # Email MX verification
+    "dnspython>=2.6.1",
+    # Fuzzy matching / deduplication
+    "rapidfuzz>=3.9.3",
+    # Export
+    "openpyxl>=3.1.3",
+    "weasyprint>=62.3",
+    # Task queue
+    "celery>=5.4.0",
+    "redis>=5.0.4",
+    # Proxy rotation / Tor control
+    "stem>=1.8.2",
+    "PySocks>=1.7.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "httpx",  # for TestClient
+]
+
+[project.scripts]
+lead-generator = "backend.main:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.setuptools.packages.find]
+include = ["backend*", "hotfrog*", "scripts*"]
+
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+# One test root. There used to be two (tests/ and backend/tests/) with no config,
+# so a bare `pytest` silently collected only one of them — every green run
+# depended on remembering to pass both paths.
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"

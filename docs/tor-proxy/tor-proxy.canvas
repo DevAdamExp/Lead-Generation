@@ -1,0 +1,546 @@
+{
+  "nodes": [
+    {
+      "id": "fb451f62f353871b",
+      "type": "file",
+      "file": "tor-proxy/Circuit Capacity and Concurrency.md",
+      "x": 844,
+      "y": -120,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "a4e7eddad19adc66",
+      "type": "file",
+      "file": "tor-proxy/Circuit Isolation.md",
+      "x": 727,
+      "y": 351,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "fd21f16521026b96",
+      "type": "file",
+      "file": "tor-proxy/Configuration.md",
+      "x": 406,
+      "y": 714,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "60a8369a5b328bb3",
+      "type": "file",
+      "file": "tor-proxy/Consumers.md",
+      "x": -48,
+      "y": 886,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "03c196299e4616e4",
+      "type": "file",
+      "file": "tor-proxy/Failure Classification and Retry.md",
+      "x": -529,
+      "y": 828,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "f62d23f89960dd05",
+      "type": "file",
+      "file": "tor-proxy/Health and Thread-Safety.md",
+      "x": -928,
+      "y": 552,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "74f4bf7bb8b9791e",
+      "type": "file",
+      "file": "tor-proxy/Proxy Strategy Tiers.md",
+      "x": -1154,
+      "y": 122,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "0decd66035ce5c90",
+      "type": "file",
+      "file": "tor-proxy/ProxyRotator.md",
+      "x": -1154,
+      "y": -362,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "6a4f64006280e8ec",
+      "type": "file",
+      "file": "tor-proxy/Roadmap and YAGNI.md",
+      "x": -928,
+      "y": -792,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "4ae0a53e59e3d7c7",
+      "type": "file",
+      "file": "tor-proxy/Tor Daemon Deployment.md",
+      "x": -529,
+      "y": -1068,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "49670690e43accc6",
+      "type": "file",
+      "file": "tor-proxy/Tor Fundamentals.md",
+      "x": -48,
+      "y": -1126,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "97507e9b5e0ea4df",
+      "type": "file",
+      "file": "tor-proxy/Tor Proxy System.md",
+      "x": -170,
+      "y": -120,
+      "width": 340,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "3de39b3c2604e569",
+      "type": "file",
+      "file": "tor-proxy/TorInstance.md",
+      "x": 406,
+      "y": -954,
+      "width": 340,
+      "height": 240
+    },
+    {
+      "id": "832eae8f4c0d93f5",
+      "type": "file",
+      "file": "tor-proxy/get_proxy and Tags.md",
+      "x": 727,
+      "y": -591,
+      "width": 340,
+      "height": 240
+    }
+  ],
+  "edges": [
+    {
+      "id": "0b05b3245b732f77",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "left",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "right"
+    },
+    {
+      "id": "fde937cd660e14e7",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "top",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "bottom"
+    },
+    {
+      "id": "14f3a0d2bec223ae",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "left",
+      "toNode": "6a4f64006280e8ec",
+      "toSide": "right"
+    },
+    {
+      "id": "5c5ffcc7b795e8ff",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "bottom",
+      "toNode": "a4e7eddad19adc66",
+      "toSide": "top"
+    },
+    {
+      "id": "e3b91ea0637e23d7",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "bottom",
+      "toNode": "fd21f16521026b96",
+      "toSide": "top"
+    },
+    {
+      "id": "9fbc6b4efc29b852",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "bottom",
+      "toNode": "60a8369a5b328bb3",
+      "toSide": "top"
+    },
+    {
+      "id": "69fea28de35e09a5",
+      "fromNode": "fb451f62f353871b",
+      "fromSide": "left",
+      "toNode": "f62d23f89960dd05",
+      "toSide": "right"
+    },
+    {
+      "id": "e1debce1fd026e84",
+      "fromNode": "a4e7eddad19adc66",
+      "fromSide": "left",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "right"
+    },
+    {
+      "id": "35400f8a66c34079",
+      "fromNode": "a4e7eddad19adc66",
+      "fromSide": "top",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "bottom"
+    },
+    {
+      "id": "109d175cbe29147e",
+      "fromNode": "a4e7eddad19adc66",
+      "fromSide": "left",
+      "toNode": "03c196299e4616e4",
+      "toSide": "right"
+    },
+    {
+      "id": "d3245146bafd546b",
+      "fromNode": "a4e7eddad19adc66",
+      "fromSide": "top",
+      "toNode": "49670690e43accc6",
+      "toSide": "bottom"
+    },
+    {
+      "id": "00247b2b8ada7847",
+      "fromNode": "a4e7eddad19adc66",
+      "fromSide": "top",
+      "toNode": "3de39b3c2604e569",
+      "toSide": "bottom"
+    },
+    {
+      "id": "cd59052282fb36cb",
+      "fromNode": "a4e7eddad19adc66",
+      "fromSide": "top",
+      "toNode": "4ae0a53e59e3d7c7",
+      "toSide": "bottom"
+    },
+    {
+      "id": "499e062a580e8e37",
+      "fromNode": "fd21f16521026b96",
+      "fromSide": "top",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "bottom"
+    },
+    {
+      "id": "25c926fa93acd124",
+      "fromNode": "fd21f16521026b96",
+      "fromSide": "left",
+      "toNode": "0decd66035ce5c90",
+      "toSide": "right"
+    },
+    {
+      "id": "d2fc0916840830e9",
+      "fromNode": "fd21f16521026b96",
+      "fromSide": "left",
+      "toNode": "74f4bf7bb8b9791e",
+      "toSide": "right"
+    },
+    {
+      "id": "a5236c95b64a9932",
+      "fromNode": "fd21f16521026b96",
+      "fromSide": "left",
+      "toNode": "03c196299e4616e4",
+      "toSide": "right"
+    },
+    {
+      "id": "51845dc29be84ab8",
+      "fromNode": "fd21f16521026b96",
+      "fromSide": "top",
+      "toNode": "4ae0a53e59e3d7c7",
+      "toSide": "bottom"
+    },
+    {
+      "id": "fd5f5fb97ac03de5",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "top",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "bottom"
+    },
+    {
+      "id": "128e883e53d33446",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "top",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "bottom"
+    },
+    {
+      "id": "d99d68bb15a6a066",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "top",
+      "toNode": "0decd66035ce5c90",
+      "toSide": "bottom"
+    },
+    {
+      "id": "f7c892ad13c1982a",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "top",
+      "toNode": "6a4f64006280e8ec",
+      "toSide": "bottom"
+    },
+    {
+      "id": "0040169d96c08ec5",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "left",
+      "toNode": "03c196299e4616e4",
+      "toSide": "right"
+    },
+    {
+      "id": "af095409a0b15506",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "right",
+      "toNode": "a4e7eddad19adc66",
+      "toSide": "left"
+    },
+    {
+      "id": "aadb44880c88d366",
+      "fromNode": "60a8369a5b328bb3",
+      "fromSide": "left",
+      "toNode": "f62d23f89960dd05",
+      "toSide": "right"
+    },
+    {
+      "id": "8b1959a05c9363b4",
+      "fromNode": "03c196299e4616e4",
+      "fromSide": "top",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "bottom"
+    },
+    {
+      "id": "0e91d8ba33c654f4",
+      "fromNode": "03c196299e4616e4",
+      "fromSide": "top",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "bottom"
+    },
+    {
+      "id": "5d2dffacc86e47e4",
+      "fromNode": "03c196299e4616e4",
+      "fromSide": "top",
+      "toNode": "6a4f64006280e8ec",
+      "toSide": "bottom"
+    },
+    {
+      "id": "9d9404c8593b830c",
+      "fromNode": "03c196299e4616e4",
+      "fromSide": "top",
+      "toNode": "74f4bf7bb8b9791e",
+      "toSide": "bottom"
+    },
+    {
+      "id": "aed487ed6ce900a1",
+      "fromNode": "f62d23f89960dd05",
+      "fromSide": "top",
+      "toNode": "3de39b3c2604e569",
+      "toSide": "bottom"
+    },
+    {
+      "id": "1ca6f084ae8c99ed",
+      "fromNode": "f62d23f89960dd05",
+      "fromSide": "top",
+      "toNode": "0decd66035ce5c90",
+      "toSide": "bottom"
+    },
+    {
+      "id": "9d6131c52ed41595",
+      "fromNode": "74f4bf7bb8b9791e",
+      "fromSide": "right",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "left"
+    },
+    {
+      "id": "b548f55e8ac43d88",
+      "fromNode": "74f4bf7bb8b9791e",
+      "fromSide": "top",
+      "toNode": "6a4f64006280e8ec",
+      "toSide": "bottom"
+    },
+    {
+      "id": "f38161520dc3881c",
+      "fromNode": "74f4bf7bb8b9791e",
+      "fromSide": "top",
+      "toNode": "49670690e43accc6",
+      "toSide": "bottom"
+    },
+    {
+      "id": "eb272fb8771566b4",
+      "fromNode": "74f4bf7bb8b9791e",
+      "fromSide": "right",
+      "toNode": "a4e7eddad19adc66",
+      "toSide": "left"
+    },
+    {
+      "id": "d794313cc6e8bb9f",
+      "fromNode": "74f4bf7bb8b9791e",
+      "fromSide": "right",
+      "toNode": "60a8369a5b328bb3",
+      "toSide": "left"
+    },
+    {
+      "id": "b48f5a0ca8423a1d",
+      "fromNode": "0decd66035ce5c90",
+      "fromSide": "right",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "left"
+    },
+    {
+      "id": "0ffecae8a6957a94",
+      "fromNode": "0decd66035ce5c90",
+      "fromSide": "right",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "left"
+    },
+    {
+      "id": "f7f75250b497642c",
+      "fromNode": "0decd66035ce5c90",
+      "fromSide": "right",
+      "toNode": "3de39b3c2604e569",
+      "toSide": "left"
+    },
+    {
+      "id": "4281033f9e65f3e8",
+      "fromNode": "0decd66035ce5c90",
+      "fromSide": "right",
+      "toNode": "fb451f62f353871b",
+      "toSide": "left"
+    },
+    {
+      "id": "73c3fafb975abb5c",
+      "fromNode": "0decd66035ce5c90",
+      "fromSide": "right",
+      "toNode": "a4e7eddad19adc66",
+      "toSide": "left"
+    },
+    {
+      "id": "3adca868d8425df1",
+      "fromNode": "6a4f64006280e8ec",
+      "fromSide": "right",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "left"
+    },
+    {
+      "id": "b7cd12482ec285e7",
+      "fromNode": "6a4f64006280e8ec",
+      "fromSide": "right",
+      "toNode": "a4e7eddad19adc66",
+      "toSide": "left"
+    },
+    {
+      "id": "ebd11221919801f2",
+      "fromNode": "6a4f64006280e8ec",
+      "fromSide": "bottom",
+      "toNode": "fd21f16521026b96",
+      "toSide": "top"
+    },
+    {
+      "id": "e422ef6f3b9364e4",
+      "fromNode": "6a4f64006280e8ec",
+      "fromSide": "right",
+      "toNode": "4ae0a53e59e3d7c7",
+      "toSide": "left"
+    },
+    {
+      "id": "d2bcb2904704b3e0",
+      "fromNode": "4ae0a53e59e3d7c7",
+      "fromSide": "bottom",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "top"
+    },
+    {
+      "id": "abdbcd65037974de",
+      "fromNode": "4ae0a53e59e3d7c7",
+      "fromSide": "right",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "left"
+    },
+    {
+      "id": "f83f6d8919f6402e",
+      "fromNode": "4ae0a53e59e3d7c7",
+      "fromSide": "right",
+      "toNode": "49670690e43accc6",
+      "toSide": "left"
+    },
+    {
+      "id": "4f7d88e601608423",
+      "fromNode": "4ae0a53e59e3d7c7",
+      "fromSide": "right",
+      "toNode": "fb451f62f353871b",
+      "toSide": "left"
+    },
+    {
+      "id": "ac2c91e60190769c",
+      "fromNode": "49670690e43accc6",
+      "fromSide": "bottom",
+      "toNode": "97507e9b5e0ea4df",
+      "toSide": "top"
+    },
+    {
+      "id": "63de9181a4dadcfc",
+      "fromNode": "49670690e43accc6",
+      "fromSide": "right",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "left"
+    },
+    {
+      "id": "1a9fe90728fb669f",
+      "fromNode": "49670690e43accc6",
+      "fromSide": "left",
+      "toNode": "0decd66035ce5c90",
+      "toSide": "right"
+    },
+    {
+      "id": "233f65cf7e6e611e",
+      "fromNode": "97507e9b5e0ea4df",
+      "fromSide": "right",
+      "toNode": "832eae8f4c0d93f5",
+      "toSide": "left"
+    },
+    {
+      "id": "acb490b8bff8e247",
+      "fromNode": "97507e9b5e0ea4df",
+      "fromSide": "top",
+      "toNode": "3de39b3c2604e569",
+      "toSide": "bottom"
+    },
+    {
+      "id": "569c14f2fb29b1a8",
+      "fromNode": "97507e9b5e0ea4df",
+      "fromSide": "left",
+      "toNode": "f62d23f89960dd05",
+      "toSide": "right"
+    },
+    {
+      "id": "bd6bc30f670b729c",
+      "fromNode": "3de39b3c2604e569",
+      "fromSide": "left",
+      "toNode": "49670690e43accc6",
+      "toSide": "right"
+    },
+    {
+      "id": "66595328494198a9",
+      "fromNode": "3de39b3c2604e569",
+      "fromSide": "left",
+      "toNode": "4ae0a53e59e3d7c7",
+      "toSide": "right"
+    },
+    {
+      "id": "6ca839a9650b9391",
+      "fromNode": "832eae8f4c0d93f5",
+      "fromSide": "bottom",
+      "toNode": "fd21f16521026b96",
+      "toSide": "top"
+    },
+    {
+      "id": "85830dc9f619afb1",
+      "fromNode": "832eae8f4c0d93f5",
+      "fromSide": "left",
+      "toNode": "f62d23f89960dd05",
+      "toSide": "right"
+    }
+  ]
+}

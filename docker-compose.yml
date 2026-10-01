@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  tor:
+    image: dperson/torproxy:latest
+    restart: unless-stopped
+    ports:
+      - "9050:9050"   # SOCKS proxy
+      - "9051:9051"   # Control port (for circuit switching)
+
+  api:
+    build: .
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file: .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - TOR_SOCKS_PORTS=9050
+      - TOR_CONTROL_PORTS=9051
+    depends_on:
+      - redis
+      - tor
+
+  worker:
+    build: .
+    command: celery -A backend.workers.celery_app worker --loglevel=info --concurrency=2
+    volumes:
+      - .:/app
+    env_file: .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - TOR_SOCKS_PORTS=9050
+      - TOR_CONTROL_PORTS=9051
+    depends_on:
+      - redis
+      - tor
+
+volumes:
+  redis_data:

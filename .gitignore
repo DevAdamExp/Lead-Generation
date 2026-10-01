@@ -1,0 +1,54 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Virtual environments ────────────────────────────────
+.venv/
+venv/
+env/
+**/.venv/
+
+# ── Secrets / env ───────────────────────────────────────
+.env
+.env.bak*
+.env.*.bak
+frontend/.env.local
+
+# ── Databases ───────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ── Logs ────────────────────────────────────────────────
+*.log
+
+# ── Generated output ────────────────────────────────────
+exports/
+artifacts/
+/tmp/maps_debug/
+
+# ── Node / Next.js ──────────────────────────────────────
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+frontend/next-env.d.ts
+
+# ── OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# DB backups taken before bulk refinement
+leads.db.bak-*
+
+# SQLite sidecars — transient, never belong in git
+leads.db
+leads.db-shm
+leads.db-wal
